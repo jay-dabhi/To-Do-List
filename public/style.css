@@ -26,17 +26,26 @@ h1{
     font-size: larger;
     font-weight:bold;
     min-height: 300px;
-    width: 30%;
+    min-width: 300px;
     border-radius: 5px;
     margin-top: 2.5em;
 
-}
-.ul{
     text-align: left;
-    margin-left:40%;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    /* margin-left:40%;
+    margin-top: 20px; */
     font-family: 'Rajdhani', sans-serif;
+
 }
+/* .ul{
+    text-align: left;
+    display: flex;
+    justify-content: center; */
+    /* margin-left:40%;
+    margin-top: 20px; */
+    /* font-family: 'Rajdhani', sans-serif;
+} */
 
 ul{
     list-style: none;
@@ -66,10 +75,18 @@ button{
 
 .span1{
 
-    position: absolute;
-    top: 29.5%;
-    left:45%;
-    background-color: red;
+    position: static;
+    /* top: 29.5%;
+    left:45%; */
+    /* background-color: red; */
 
     
+}
+
+.header{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+color: white;
+    background-color: black;
 }

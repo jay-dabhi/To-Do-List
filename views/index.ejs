@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <title>TO DO LIST</title>
 </head>
@@ -18,37 +20,39 @@
 
     <style>
         .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 48
-
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
         }
 
         .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 700,
-          'GRAD' 0,
-          'opsz' 48
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 700,
+                'GRAD' 0,
+                'opsz' 48
         }
-        </style>
+    </style>
     <h1>
         <%= Foo %>
     </h1>
 
     <div class="container">
         <div class="ul">
+
             <ul>
-                <h3><span  class="material-symbols-outlined span1">
-                    done
+                <div class="header">
+                    <h3><span class="material-symbols-outlined span1">
+                        done
                     </span> TASK LIST</h3>
+                </div>
                 <br>
                 <% for(var i=0; i < newItems.length; i++){ %>
                     <li>
 
-                        <input style="background-color: blueviolet;" type="checkbox" name="my-checkbox" id="opt-in" />
+                        <input type="checkbox" name="my-checkbox" id="opt-in" />
                         <label for="opt-in">
                             <%= newItems[i] %>
                         </label>
@@ -56,18 +60,20 @@
                         <!-- <input type="checkbox" name="check" id="check"> <label for="check"></label> -->
                     </li>
                     <% } %>
+
+                    <form action="/" method="POST">
+                        <br>
+                        <label for="Text">ADD TASK : </label><br>
+                        <input style="height: 30px;" type="text" name="textInput" id="Text" required>
+            
+                        <button type="submit"><span class="material-symbols-outlined">
+                                add_circle
+                            </span></button>
+                    </form>
             </ul>
         </div>
 
-        <form action="/" method="POST">
-
-            <label for="Text">ADD TASK : </label>
-            <input type="text" name="textInput" id="Text" required>
-
-            <button type="submit"><span class="material-symbols-outlined">
-                add_circle
-                </span></button>
-        </form>
+        
     </div>
 
 
