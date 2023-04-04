@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: black;
+    text-align: center;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container{
+    background-color: white;
+    color:black;
+    font-size: larger;
+    font-weight:bold;
+    min-height: 300px;
+    width: 30%;
+    border-radius: 5px;
+    margin-top: 2.5em;
+
+}
+.ul{
+    text-align: left;
+    margin-left:40%;
+    margin-top: 20px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+ul{
+    list-style: none;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+/* input[type="checkbox"]:checked {
+    color: red;
+} */
+input:checked + label {
+    text-decoration: line-through;
+    /* background-color: black; */
+  }
+#Text{
+    /* background-color: aqua; */
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+
+button{
+    border: none;
+    cursor: -webkit-grab; cursor: grab;
+}
+
+
+.span1{
+
+    position: absolute;
+    top: 29.5%;
+    left:45%;
+    background-color: red;
+
+    
+}
