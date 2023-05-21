@@ -44,37 +44,63 @@
 
             <ul>
                 <div class="header">
-                    <h3><span class="material-symbols-outlined span1">
-                        done
-                    </span> TASK LIST</h3>
+                    <h3> TASK LIST</h3>
                 </div>
                 <br>
-                <% for(var i=0; i < newItems.length; i++){ %>
+
+                <% newItems.forEach(function(item){%>
+                    <form action="/delet" method="post">
+                        <li>
+
+                            <input type="checkbox" name="checkbox" id="opt-in" value="<%=item._id%>" onChange="this.form.submit()" />
+                            <label for="opt-in">
+                                <%= item.name %>
+                            </label>
+
+                            <!-- <input type="checkbox" name="check" id="check"> <label for="check"></label> -->
+                        </li>
+
+                    </form>
+                    <% })%>
+
+                        <!-- <% for(var i=0; i < newItems.length; i++){ %>
                     <li>
 
                         <input type="checkbox" name="my-checkbox" id="opt-in" />
                         <label for="opt-in">
-                            <%= newItems[i] %>
+                            <%= newItems[i].name %>
                         </label>
 
-                        <!-- <input type="checkbox" name="check" id="check"> <label for="check"></label> -->
+                        <input type="checkbox" name="check" id="check"> <label for="check"></label>
                     </li>
-                    <% } %>
+                    <% } %> -->
 
-                    <form action="/" method="POST">
-                        <br>
-                        <label for="Text">ADD TASK : </label><br>
-                        <input style="height: 30px;" type="text" name="textInput" id="Text" required>
-            
-                        <button type="submit"><span class="material-symbols-outlined">
-                                add_circle
-                            </span></button>
-                    </form>
+                        <form action="/" method="POST">
+                            <br>
+                            <label for="Text">ADD TASK : </label><br>
+                            <input style="height: 30px;" type="text" name="textInput" id="Text" required>
+
+                            <button type="submit"><span class="material-symbols-outlined">
+                                    add_circle
+                                </span></button>
+                        </form>
             </ul>
         </div>
 
-        
+
     </div>
+
+
+    <form action="/date" method="post">
+        <input type="date" name="date" id="1">
+
+        <button type="submit">Submit</button>
+
+        <!-- <button type="submit" name="return" value="true">Home</button> -->
+
+
+
+    </form>
 
 
 </body>

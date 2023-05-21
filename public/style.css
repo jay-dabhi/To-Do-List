@@ -13,8 +13,14 @@ body{
     align-items: center;
 }
 
+
 h1{
-    color: white;
+    height: 30%;
+    width: 30%;
+    border-radius: 5px;
+
+    background-color: white;
+    color: black;
     font-weight: bolder;
     font-size: 50px;
     font-family: 'Rajdhani', sans-serif;
@@ -87,8 +93,13 @@ button{
 
 .header{
     margin-top: 10px;
+
     display: flex;
     flex-direction: row;
 color: white;
     background-color: black;
+}
+
+h3{
+    margin-left: 3.5rem;
 }
